@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Shresth Goel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="index.html#home" class="logo-link">SG</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section section-projects-page">
+            <div class="container">
+                <h1 class="page-title">All Projects</h1>
+                
+                <div class="projects-page-grid">
+                    
+                    <article class="project-page-card">
+                        <div class="card-image-wrapper">
+                            <img src="images/rms.png" alt="research management system" class="card-img">
+                            </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Research Management System</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">javascript</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                            </div>
+                            <p class="card-desc">
+                                A web-based Research Management System designed to manage and organize research-related data of all professors within a college.
+                                The system provides a centralized platform to store, update, and access faculty research profiles efficiently.
+                            </p>
+                            <div class="card-links">
+                                <a href="https://github.com/shresthgoel77-png/research-management-system-.git" target="_blank" class="repo-link">
+                                    <i class="fab fa-github"></i> Repo Url
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-page-card">
+                        <div class="card-image-wrapper">
+                            <img src="images/creddost.png" alt="creddost" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">CredDost</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">Vanilla JavaScript </span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                            </div>
+                            <p class="card-desc">
+                                A professional, single-file AI chatbot designed to act as a Senior Financial Consultant for the Indian market. 
+                                Built with vanilla JavaScript and Tailwind CSS, it leverages the Google Gemini API to provide strategic, context-aware advice on loans, CIBIL scores, and financial planning.
+                            </p>
+                            <div class="card-links">
+                                <a href="https://github.com/shresthgoel77-png/Creddost.git" target="_blank" class="repo-link">
+                                    <i class="fab fa-github"></i> Repo Url
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-page-card">
+                        <div class="card-image-wrapper">
+                            <img src="images/envirolens.png" alt="evnirolens" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">envirolens</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">TAILWIND CSS</span>
+                                <span class="tech-tag">VANILLA JS</span>
+                                <span class="tech-tag">python</span>
+                            </div>
+                            <p class="card-desc">
+                                The project demonstrates how geospatial mapping can be used to visualize pollution indicators, sensors, and urban environmental infrastructure.
+                            </p>
+                            <div class="card-links">
+                                <a href="https://github.com/shresthgoel77-png/enviro-lens.git" target="_blank" class="repo-link">
+                                    <i class="fab fa-github"></i> Repo Url
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-page-card">
+                        <div class="card-image-wrapper">
+                            <img src="images/attendance backend.png" alt="attendance-backend" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Attendance Backend</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">SQL</span>
+                            </div>
+                            <p class="card-desc">
+                                A Flask-based backend application designed to automate attendance tracking using API-driven workflows. 
+                                The system handles user registration, attendance marking, data storage, and retrieval in a scalable and secure manner.
+                            </p>
+                            <div class="card-links">
+                                <a href="https://github.com/shresthgoel77-png/attendance-backend.git" target="_blank" class="repo-link">
+                                    <i class="fab fa-github"></i> Repo Url
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2026 Shresth Goel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentLocation = location.href;
+            const menuItem = document.querySelectorAll('.nav-link');
+            const menuLength = menuItem.length;
+            for (let i = 0; i < menuLength; i++) {
+                if (menuItem[i].href === currentLocation) {
+                    menuItem[i].classList.add("active");
+                }
+            }
+        });
+    </script>
+</body>
+</html>
